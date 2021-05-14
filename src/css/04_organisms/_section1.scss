@@ -1,0 +1,28 @@
+#section1 {
+    padding-bottom: 50px;
+
+    h2 {
+        color: $text-black;
+    }
+
+    p {
+        color: $red;
+        font-weight: 600;
+    }
+
+    #section1p {
+        color: $text-black;
+        margin-bottom: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin-left: $margin-left;
+        background-color: $red;
+        padding: 10px 45px 10px 45px;
+        font-weight: 600;
+        border-width: 3px;
+        border-radius: 5px;
+    }
+}

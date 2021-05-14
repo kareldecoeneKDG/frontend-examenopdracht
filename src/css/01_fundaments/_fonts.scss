@@ -1,0 +1,30 @@
+$font-alfa: 'Alfa Slab One', cursive;
+$font-dm: 'DM Sans', sans-serif;
+
+h1, h2, h3, h4 {
+    font-family: $font-alfa;
+}
+
+h1 {
+    color: $text-white;
+    padding: 15px;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+h2 {
+    color: $text-white;
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding: 15px
+}
+
+p, a {
+    font-family: $font-dm;
+    padding: 15px;
+    font-weight: 600;
+}
+
+input {
+    font-family: $font-dm;
+}

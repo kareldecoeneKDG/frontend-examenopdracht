@@ -1,0 +1,35 @@
+header {
+    h1 {
+        line-height: 60px;
+    }
+
+    p {
+        color: $text-white;
+        padding-top: 0;
+        padding-bottom: 0;
+        letter-spacing: 1px;
+    }
+
+    form {
+        #emailInput {
+            width: 90%;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding: 10px;
+            border-color: lightgray;
+            color: lightgray;
+            border-radius: 5px;
+        }
+
+        #submitButton {
+            margin-left: $margin-left;
+            margin-top: $margin-right;
+            color: $text-black;
+            background-color: $text-white;
+            padding: 10px 45px 10px 45px;
+            font-weight: 600;
+            border-width: 3px;
+            border-radius: 5px;
+        }
+    }
+}
