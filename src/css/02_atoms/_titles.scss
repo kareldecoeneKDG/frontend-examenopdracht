@@ -7,23 +7,74 @@ h2 {
     font-size: 40px;
 }
 
+header {
+    .header__title {
+        line-height: 60px;
+    }
 
-
-
-
-nav {
-    &__logo {
-        padding-right: 160px;
+    .header__title2 {
+        display: none;
     }
 }
 
 
 
+#section1 {
+    .section1__title {
+        color: $text-black;
+    }
+}
 
+#section2 {
+    .section2__title {
+        color: $text-black;
+    }
+}
 
+#section3 {
+    .section3__title {
+        color: $text-black;
+        margin-bottom: 40px;
+    }
+}
 
+footer {
+    .footer__top {
+        .footer__top__title {
+            margin-bottom: 20px;
+            font-size: 36px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
 
 // Media query to define what menu looks like on Desktop
 @media screen and (min-width: 769px) {
+    header {
+        .header__leftcontent {
+            .header__title1 {
+                display: none;
+            }
     
+            .header__title2 {
+                display: block;
+            }
+
+            .header__title {
+                font-size: 70px;
+                line-height: 80px;
+            }
+        }
+    }
+
+    footer {
+        .footer__top {
+            .footer__top__title {
+                width: 35%;
+            }
+        }
+    }
 }

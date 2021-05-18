@@ -1,0 +1,23 @@
+#section3 {
+    .section3__leftcontent {
+        .section3__attribute {
+            margin-left: 15px;
+            margin-bottom: 10px;
+            display: flex;
+    
+            .section3__attribute__icon {
+                width: 25px;
+                height: 25px;
+            }
+    
+            .section3__attribute__p {
+                display: inline;
+                padding-top: 0;
+            }
+        }
+    
+        #lastAttribute {
+            padding-bottom: 40px;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+p {
+    display: block;
+}
+
+header {
+    .header__p {
+        color: $text-white;
+        padding-top: 0;
+        padding-bottom: 0;
+        letter-spacing: 1px;
+    }
+}
+
+
+
+#section1 {
+    .section1__p1 {
+        color: $red;
+        font-weight: 600;
+    }
+
+    .section1__p2 {
+        color: $text-black;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+#section2 {
+    .section2__p1 {
+        color: $red;
+        padding-top: 65px;
+    }
+
+    .section2__p2 {
+        color: $text-black;
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section2__item {
+        .section2__item__p {
+            color: grey;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+#section3 {
+    .section3__p1 {
+        color: $red;
+        padding-top: 65px;
+    }
+}
+
+footer {
+    .footer__top {
+        .footer__top__p {
+            color: white;
+            padding-top: 80px;
+        }
+    }
+
+    .footer__lastsection {
+        .footer__lastsection__p {
+            opacity: 50%;
+        }
+    }
+}
+
+// Media query to define what menu looks like on Desktop
+@media screen and (min-width: 769px) {
+    #section1 {
+        .section1__rightcontent {
+            .section1p__p2 {
+                line-height: 30px;
+            }
+        }
+    }
+
+    #section2 {
+        .section2__p2 {
+            width: 480px;
+        }
+
+        .section2__item {
+            .section2__item__p {
+                width: 350px;
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 footer {
-    #top {
+    .footer__top {
         text-align: center;
         background-image: url("../img/footer2IMG.png");
         padding-bottom: 80px;
@@ -7,145 +7,38 @@ footer {
         background-size: cover;
         background-position: center bottom;
         background-position: 50% 55%;
-
-        p {
-            color: white;
-            padding-top: 80px;
-        }
-
-        h2 {
-            margin-bottom: 20px;
-            font-size: 36px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        a {
-            color: $text-black;
-            text-decoration: none;
-            background-color: white;
-            padding: 10px 45px;
-            border-radius: 5px;
-            border: 1px solid $text-black;
-        }
     }
 
-    #bottom {
+    .footer__bottom {
         background-color: $pink;
-
-        h2 {
-            padding-top: 80px;
-        }
-
-        p {
-            color: white;
-            padding-bottom: 40px;
-        }
-
-        a {
-            padding: 0;
-            padding: 8px;
-        }
-
-        #first {
-            padding-left: 15px;
-        }
-
-        #firstList {
-            padding-top: 60px;
-        }
-
-        .list {
-            padding-left: 15px;
-            color: white;
-
-            h4 {
-                padding-bottom: 20px;
-                padding-top: 40px;
-                font-weight: 100;
-            }
-
-            ul {
-                list-style-type: none;
-                color: white;
-                font-family: $font-dm;
-
-                li {
-                    padding: 10px 0px;
-                    opacity: 50%;
-                }
-            }
-        }
-
-        .list:last-child {
-            padding-bottom: 40px;
-        }
     }
 
-    #last {
+    .footer__lastsection {
         padding-top: 40px;
         background-color: $dark-red;
         color: white;
         text-align: center;
         font-family: $font-dm;
         padding: 30px 40px;
-
-        p {
-            opacity: 50%;
-        }
     }
 }
 
 // Media query to define what menu looks like on Desktop
 @media screen and (min-width: 769px) {
     footer {
-        #top {
+        .footer__top {
             height: 380px;
-
-            h2 {
-                width: 35%;
-            }
         }
 
-        #bottom {
+        .footer__bottom {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             padding-top: 60px;
             padding-bottom: 100px;
-
-            .logoFooter {
-                width: 30%;
-                margin: 0;
-                padding: 0;
-                
-                h2 {
-                    padding-top: 40px;
-                }
-
-                p {
-                    line-height: 30px;
-                }
-            }
-
-            .list {
-                margin: 0;
-                padding: 0;
-            }
-
-            #firstList {
-                margin: 0;
-                padding: 0;
-            }
-
-            .list:last-child {
-                padding-right: 100px;
-            }
         }
 
-        #last {
+        .footer__lastsection {
             margin-top: 0;
             background-color: $dark-red;
         }

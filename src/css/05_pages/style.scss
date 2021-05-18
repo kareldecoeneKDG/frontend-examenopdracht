@@ -2,9 +2,22 @@
 @import '../01_fundaments/spacers';
 @import '../01_fundaments/basics';
 @import '../01_fundaments/fonts';
+
+
 @import '../02_atoms/titles';
+@import '../02_atoms/buttons';
+@import '../02_atoms/paragraphs';
+
+
 @import '../03_molecules/nav__burger';
 @import '../03_molecules/nav__links';
+@import '../03_molecules/forms';
+@import '../03_molecules/section2__item';
+@import '../03_molecules/section3__attribute';
+@import '../03_molecules/footer__logosection';
+@import '../03_molecules/footer__list';
+
+
 @import '../04_organisms/menu';
 @import '../04_organisms/header';
 @import '../04_organisms/section1';

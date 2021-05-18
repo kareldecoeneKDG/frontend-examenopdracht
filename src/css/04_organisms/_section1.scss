@@ -1,30 +1,5 @@
 #section1 {
     padding-bottom: 50px;
-
-    h2 {
-        color: $text-black;
-    }
-
-    p {
-        color: $red;
-        font-weight: 600;
-    }
-
-    #section1p {
-        color: $text-black;
-        margin-bottom: 20px;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-        margin-left: $margin-left;
-        background-color: $red;
-        padding: 10px 45px 10px 45px;
-        font-weight: 600;
-        border-width: 3px;
-        border-radius: 5px;
-    }
 }
 
 // Media query to define what menu looks like on Desktop
@@ -34,25 +9,17 @@
         justify-content: space-evenly;
         min-height: 650px;
 
-        #leftContentSec1 {
+        .section1__leftcontent {
             display: inline;
             width: 30%;
             margin-top: 100px;
         }
 
-        #rightContentSec1 {
+        .section1__rightcontent {
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: 25%;
-
-            a {
-                width: 140px;
-            }
-
-            #section1p {
-                line-height: 30px;
-            }
         }
     }
 }

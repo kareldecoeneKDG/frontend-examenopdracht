@@ -9,10 +9,6 @@ body {
         min-height: 10vh;
         background-color: $pink;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
-        #signUpButton {
-            display: none;
-        }
     }
 }
 
@@ -31,33 +27,13 @@ body {
 // Media query to define what menu looks like on Desktop
 @media screen and (min-width: 769px) {
     body {
-        nav { //oke
+        nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
             min-height: 8vh;
             background-color: $pink;
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    
-                li {
-                    list-style-type: none;
-                    opacity: 1;
-                }
-    
-                a {
-                    color: white;
-                    text-decoration: none;
-                    font-weight: bold;
-                }
-
-            #signUpButton {
-                display: flex;
-                color: white;
-                text-decoration: none;
-                border: 1px solid white;
-                padding: 10px 40px;
-                border-radius: 5px;
-            }
         }
     }
 }

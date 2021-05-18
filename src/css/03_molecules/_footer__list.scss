@@ -1,0 +1,54 @@
+footer {
+    .footer__bottom {
+        .footer__bottom__list {
+            padding-left: 15px;
+            color: white;
+
+            .footer__bottom__list__title {
+                padding-bottom: 20px;
+                padding-top: 40px;
+                font-weight: 100;
+            }
+
+            .footer__bottom__list__ul {
+                list-style-type: none;
+                color: white;
+                font-family: $font-dm;
+
+                li {
+                    padding: 10px 0px;
+                    opacity: 50%;
+                }
+            }
+        }
+
+        .footer__bottom__list:first-child {
+            padding-top: 60px;
+        }
+
+        .footer__bottom__list:last-child {
+            padding-bottom: 40px;
+        }
+    }
+}
+
+// Media query to define what menu looks like on Desktop
+@media screen and (min-width: 769px) {
+    footer {
+        .footer__bottom {
+            .footer__bottom__list {
+                margin: 0;
+                padding: 0;
+            }
+
+            .footer__bottom__list:first-child {
+                margin: 0;
+                padding: 0;
+            }
+
+            .footer__bottom__list:last-child {
+                padding-right: 100px;
+            }
+        }
+    }
+}
