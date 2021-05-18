@@ -1,8 +1,12 @@
 footer {
     #top {
         text-align: center;
-        background-image: url("../img/Bitmap.png");
+        background-image: url("../img/footer2IMG.png");
         padding-bottom: 80px;
+        max-height: 448px;
+        background-size: cover;
+        background-position: center bottom;
+        background-position: 50% 55%;
 
         p {
             color: white;
@@ -12,6 +16,10 @@ footer {
         h2 {
             margin-bottom: 20px;
             font-size: 36px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0;
+            padding-right: 0;
         }
 
         a {
@@ -70,15 +78,76 @@ footer {
                 }
             }
         }
+
+        .list:last-child {
+            padding-bottom: 40px;
+        }
     }
 
     #last {
-        margin-top: 40px;
-        background-color: #a85756;
+        padding-top: 40px;
+        background-color: $dark-red;
         color: white;
-        opacity: 50%;
         text-align: center;
         font-family: $font-dm;
         padding: 30px 40px;
+
+        p {
+            opacity: 50%;
+        }
+    }
+}
+
+// Media query to define what menu looks like on Desktop
+@media screen and (min-width: 769px) {
+    footer {
+        #top {
+            height: 380px;
+
+            h2 {
+                width: 35%;
+            }
+        }
+
+        #bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 60px;
+            padding-bottom: 100px;
+
+            .logoFooter {
+                width: 30%;
+                margin: 0;
+                padding: 0;
+                
+                h2 {
+                    padding-top: 40px;
+                }
+
+                p {
+                    line-height: 30px;
+                }
+            }
+
+            .list {
+                margin: 0;
+                padding: 0;
+            }
+
+            #firstList {
+                margin: 0;
+                padding: 0;
+            }
+
+            .list:last-child {
+                padding-right: 100px;
+            }
+        }
+
+        #last {
+            margin-top: 0;
+            background-color: $dark-red;
+        }
     }
 }

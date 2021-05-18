@@ -26,3 +26,33 @@
         border-radius: 5px;
     }
 }
+
+// Media query to define what menu looks like on Desktop
+@media screen and (min-width: 769px) {
+    #section1 {
+        display: flex;
+        justify-content: space-evenly;
+        min-height: 650px;
+
+        #leftContentSec1 {
+            display: inline;
+            width: 30%;
+            margin-top: 100px;
+        }
+
+        #rightContentSec1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 25%;
+
+            a {
+                width: 140px;
+            }
+
+            #section1p {
+                line-height: 30px;
+            }
+        }
+    }
+}

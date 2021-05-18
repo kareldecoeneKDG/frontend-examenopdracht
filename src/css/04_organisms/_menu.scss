@@ -4,61 +4,11 @@ body {
 
     nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         min-height: 10vh;
         background-color: $pink;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
-        .logo {
-            h2 {
-                padding-right: 160px;
-            }
-        }
-
-        .nav-links {
-            display: flex;
-            justify-content: space-around;
-            position: absolute;
-            right: 0px;
-            height: 46vh;
-            top: 8vh;
-            background-color: $pink;
-            flex-direction: column;
-            align-items: center;
-            width: 50%;
-            transform: translateX(100%);
-            transition: transform 0.5s ease-in;
-
-            li {
-                list-style-type: none;
-                opacity: 0;
-            }
-
-            a {
-                color: white;
-                text-decoration: none;
-                font-weight: bold;
-            }
-        }
-
-        .burger {
-            cursor: pointer;
-            display: block;
-            padding-right: 15px;
-
-            div {
-                width: 25px;
-                height: 3px;
-                background-color: white;
-                margin: 5px;
-                transition: all 0.3s ease;
-            }
-        }
-
-        .nav-active {
-            transform: translateX(0%);
-        }
 
         #signUpButton {
             display: none;
@@ -78,19 +28,6 @@ body {
     }
 }
 
-// The state of the hamburger when the menu is "opened", it becomes a cross
-.toggle {
-    .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-    .line2 {
-        opacity: 0;
-    }
-    .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-}
-
 // Media query to define what menu looks like on Desktop
 @media screen and (min-width: 769px) {
     body {
@@ -99,30 +36,8 @@ body {
             justify-content: space-around;
             align-items: center;
             min-height: 8vh;
-            background-color: #f40009;
+            background-color: $pink;
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    
-            .logo {
-                h4 {
-                    color: white;
-                    font-size: 22px;
-                    text-transform: uppercase;
-                    letter-spacing: 5px;
-                }
-            }
-    
-            .nav-links {
-                display: flex;
-                justify-content: space-around;
-                width: 35%;
-                position: static;
-                height: 8vh;
-                top: 0vh;
-                flex-direction: row;
-                align-items: normal;
-                transform: translateX(0%);
-                transition: none;
-                padding-top: 3vh;
     
                 li {
                     list-style-type: none;
@@ -134,14 +49,14 @@ body {
                     text-decoration: none;
                     font-weight: bold;
                 }
-            }
-    
-            .burger {
-                display: none;
-            }
 
             #signUpButton {
                 display: flex;
+                color: white;
+                text-decoration: none;
+                border: 1px solid white;
+                padding: 10px 40px;
+                border-radius: 5px;
             }
         }
     }

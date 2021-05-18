@@ -4,6 +4,9 @@
 
     p {
         color: $text-black;
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #textRed {
@@ -60,5 +63,28 @@
         background-color: $red;
         padding: 10px 25px;
         border-radius: 5px;
+    }
+}
+
+// Media query to define what menu looks like on Desktop
+@media screen and (min-width: 769px) {
+    #section2 {
+        p {
+            width: 480px;
+        }
+
+        .items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            .item {
+                width: 350px;
+
+                p {
+                    width: 350px
+                }
+            }
+        }
     }
 }

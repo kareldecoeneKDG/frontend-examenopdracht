@@ -1,0 +1,37 @@
+nav {
+    .nav__burger {
+        cursor: pointer;
+        display: block;
+        padding-right: 15px;
+
+        .nav__burger__line {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+// The state of the hamburger when the menu is "opened", it becomes a cross
+.toggle {
+    .nav__burger__line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .nav__burger__line2 {
+        opacity: 0;
+    }
+    .nav__burger__line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+// Media query to define what menu looks like on Desktop
+@media screen and (min-width: 769px) {
+    nav {
+        .nav__burger {
+            display: none;
+        }
+    }
+}

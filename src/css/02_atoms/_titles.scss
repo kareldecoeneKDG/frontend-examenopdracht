@@ -6,3 +6,24 @@ h2 {
     color: $text-white;
     font-size: 40px;
 }
+
+
+
+
+
+nav {
+    &__logo {
+        padding-right: 160px;
+    }
+}
+
+
+
+
+
+
+
+// Media query to define what menu looks like on Desktop
+@media screen and (min-width: 769px) {
+    
+}

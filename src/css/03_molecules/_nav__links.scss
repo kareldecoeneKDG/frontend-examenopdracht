@@ -1,0 +1,48 @@
+nav {
+    .nav__links {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        right: 0px;
+        height: 46vh;
+        top: 8vh;
+        background-color: $pink;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .nav__links--active {
+        transform: translateX(0%);
+    }
+}
+
+// Media query to define what menu looks like on Desktop
+@media screen and (min-width: 769px) {
+    nav {
+        .nav__links {
+            display: flex;
+            justify-content: space-around;
+            width: 35%;
+            position: static;
+            height: 8vh;
+            top: 0vh;
+            flex-direction: row;
+            align-items: normal;
+            transform: translateX(0%);
+            transition: none;
+            padding-top: 3vh;
+        }
+    }
+}

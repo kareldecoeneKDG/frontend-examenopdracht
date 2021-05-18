@@ -3,32 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Sans&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
-    <title>Home</title>
+
+    <title>Karel - FD Examen</title>
 </head>
 <body>
     <!-- NAV -->
     <nav>
         <div class="logo">
-            <h2>LOGO</h2>
+            <h2 class="nav__logo">LOGO</h2>
         </div>
-        <ul class="nav-links">
+
+        <ul class="nav__links">
             <li><a href="#">About</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
 
-        <a href="#" id="signUpButton">Sign up</a>
+        <a href="#" id="signUpButton" class="nav__button button">Sign up</a>
 
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+        <div class="nav__burger">
+            <div class="nav__burger__line nav__burger__line1"></div>
+            <div class="nav__burger__line nav__burger__line2"></div>
+            <div class="nav__burger__line nav__burger__line3"></div>
         </div>
     </nav>
     <!-- END NAV -->
@@ -37,17 +42,27 @@
 
     <!-- HEADER -->
     <header>
-        <p>Delectus Instructior</p>
-        <h1>Vide legim-<br>
-            us consec-<br>
-            tetuer</h1>
+        <div class="leftContent header__leftcontent">
+            <p class="header__p">Delectus Instructior</p>
 
-        <form>
-            <input type="text" placeholder="Email" id="emailInput"><br>
-            <input type="submit" value="Submit" id="submitButton">
-        </form>
+            <h1 id="title1" class="header__title1">
+                Vide legim-<br>
+                us consec-<br>
+                tetuer
+            </h1>
 
-        <img src="img/marginalia-productive-work.png" alt="IMG">
+            <h1 id="title2" class="header__title2">
+                Vide legimus<br>
+                consectetuer
+            </h1>
+
+            <form class="header__form">
+                <input type="text" placeholder="Email" id="emailInput" class="header__input header__inputemail">
+                <input type="submit" value="Submit" id="submitButton" class="header__input header__inputsubmit">
+            </form>
+        </div>
+
+        <img src="img/marginalia-productive-work.png" alt="IMG" class="rightContent header__rightcontent">
     </header>
     <!-- END HEADER -->
 
@@ -55,13 +70,15 @@
 
     <!-- SECTION1 -->
     <section id="section1">
-        <img src="img/marginalia-unsubscribed.png" alt="IMG">
+        <img src="img/marginalia-unsubscribed.png" alt="IMG" id="leftContentSec1">
 
-        <p>Dico nullam</p>
-        <h2>Vim graeco principes</h2>
+        <div id="rightContentSec1">
+            <p>Dico nullam</p>
+            <h2>Vim graeco principes</h2>
 
-        <p id="section1p">Quo ex ocurreret quaerendum. Mel cu ancillae similique. Mei no ubique persecuti, at sit iusto aliquam interpretaris.</p>
-        <a href="#">Explore</a>
+            <p id="section1p">Quo ex ocurreret quaerendum. Mel cu ancillae similique. Mei no ubique persecuti, at sit iusto aliquam interpretaris.</p>
+            <a href="#">Explore</a>
+        </div>
     </section>
     <!-- END SECTION1 -->
 
@@ -72,40 +89,42 @@
         <p id="textRed">Nominavi suavitate</p>
         <h2>Offendit persecuti</h2>
 
-        <p>Eu pro ludus dignissim. Eos debet<br>
-            molestiae constituto ne, quo consul<br>
-            interesset ei, cotidieque<br>
+        <p>Eu pro ludus dignissim. Eos debet
+            molestiae constituto ne, quo consul
+            interesset ei, cotidieque
             theophrastus ea his.</p>
 
         <!-- ITEMS -->
-        <div class="item">
-            <div class="frame">
-                <img src="img/Object1.png" alt="IMG">
-                <span>01</span>
+        <div class="items">
+            <div class="item">
+                <div class="frame">
+                    <img src="img/Object1.png" alt="IMG">
+                    <span>01</span>
+                </div>
+    
+                <h4>Possim</h4>
+                <p class="lighttext">An animal assentior nam, sed qualisque deterruisset ea qui melius erroribus</p>
             </div>
-
-            <h4>Possim</h4>
-            <p class="lighttext">An animal assentior nam, sed qualisque deterruisset ea qui melius erroribus</p>
-        </div>
-
-        <div class="item">
-            <div class="frame">
-                <img src="img/Object2.png" alt="IMG">
-                <span>02</span>
+    
+            <div class="item">
+                <div class="frame">
+                    <img src="img/Object2.png" alt="IMG">
+                    <span>02</span>
+                </div>
+    
+                <h4>Vivendo</h4>
+                <p class="lighttext">Assum ubique quodsi sea ad partem vocent vel, ius id viris utinam</p>
             </div>
-
-            <h4>Vivendo</h4>
-            <p class="lighttext">Assum ubique quodsi sea ad partem vocent vel, ius id viris utinam</p>
-        </div>
-
-        <div class="item">
-            <div class="frame">
-                <img src="img/Object3.png" alt="IMG">
-                <span>03</span>
+    
+            <div class="item">
+                <div class="frame">
+                    <img src="img/Object3.png" alt="IMG">
+                    <span>03</span>
+                </div>
+    
+                <h4>Deterruisset</h4>
+                <p class="lighttext">Nam natum volutpat eu natum elitr vel te id qui purto dicit</p>
             </div>
-
-            <h4>Deterruisset</h4>
-            <p class="lighttext">Nam natum volutpat eu natum elitr vel te id qui purto dicit</p>
         </div>
         <!-- END ITEMS -->
 
@@ -117,37 +136,39 @@
 
     <!-- SECTION3 -->
     <section id="section3">
-        <p id="textRed">Mel solum</p>
-        <h2>Mazim iudico</h2>
+        <div id="leftContentSec3">
+            <p id="textRed">Mel solum</p>
+            <h2>Mazim iudico</h2>
 
-        <!-- ATTRIBUTES -->
-            <div class="attribute">
-                <img src="img/heart.png" alt="IMG">
-                <p>Bonorum minimum et sit tritani te, qui feugait electram</p>
-            </div>
+            <!-- ATTRIBUTES -->
+                <div class="attribute">
+                    <img src="img/heart.png" alt="IMG">
+                    <p>Bonorum minimum et sit tritani te, qui feugait electram</p>
+                </div>
 
-            <div class="attribute">
-                <img src="img/star.png" alt="IMG">
-                <p>Cum ei assum tation homero mel corpora consectetuer</p>
-            </div>
+                <div class="attribute">
+                    <img src="img/star.png" alt="IMG">
+                    <p>Cum ei assum tation homero mel corpora consectetuer</p>
+                </div>
 
-            <div class="attribute">
-                <img src="img/rocket.png" alt="IMG">
-                <p>At per assum dicit verterem veri eripuit honestatis</p>
-            </div>
+                <div class="attribute">
+                    <img src="img/rocket.png" alt="IMG">
+                    <p>At per assum dicit verterem veri eripuit honestatis</p>
+                </div>
 
-            <div class="attribute">
-                <img src="img/broadcast.png" alt="IMG">
-                <p>Lorem deterruisset ea vis expetenda has ex</p>
-            </div>
+                <div class="attribute">
+                    <img src="img/broadcast.png" alt="IMG">
+                    <p>Lorem deterruisset ea vis expetenda has ex</p>
+                </div>
 
-            <div class="attribute" id="lastAttribute">
-                <img src="img/user.png" alt="IMG">
-                <p>Usu eu hinc lorem inciderint minim movet quodsi</p>
-            </div>
-        <!-- END ATTRIBUTES -->
+                <div class="attribute" id="lastAttribute">
+                    <img src="img/user.png" alt="IMG">
+                    <p>Usu eu hinc lorem inciderint minim movet quodsi</p>
+                </div>
+            <!-- END ATTRIBUTES -->
 
-        <a href="#">Get started</a>
+            <a href="#">Get started</a>
+        </div>
 
         <img src="img/marginalia-coming-soon.png" alt="IMG" id="section3Img">
     </section>
@@ -159,20 +180,20 @@
     <footer>
         <div id="top">
             <p>Eos lobortis inimicus</p>
-            <h2>Pro ad ubique<br> 
-                erroribus in<br>
-                modo mutat sed</h2>
+            <h2>Pro ad ubique erroribus in modo mutat sed</h2>
 
             <a href="#">Try now</a>
         </div>
 
         <div id="bottom">
-            <h2>LOGO</h2>
-            <p>Sit alii tantas viderer no. An mel nostrum appareat. Ad consul facilis est. Vix habeo scaevola percipitur ne, qui noster abhorreant ne.</p>
+            <div class="logoFooter">
+                <h2>LOGO</h2>
+                <p>Sit alii tantas viderer no. An mel nostrum appareat. Ad consul facilis est. Vix habeo scaevola percipitur ne, qui noster abhorreant ne.</p>
 
-            <a href="#" id="first"><img src="img/facebook.png"></a>
-            <a href="#"><img src="img/twitter.png"></a>
-            <a href="#"><img src="img/instagram.png"></a>
+                <a href="#" id="first"><img src="img/facebook.png"></a>
+                <a href="#"><img src="img/twitter.png"></a>
+                <a href="#"><img src="img/instagram.png"></a>
+            </div>
 
             <div class="list" id="firstList">
                 <h4>Habeo</h4>
@@ -206,11 +227,12 @@
                     <li>Mentitum</li>
                 </ul>
             </div>
+        </div>
 
-            <div id="last">
-                © LOGO, 2019. All rights reserved.<br>
-                Created by Laaqiq.
-            </div>
+        <div id="last">
+            <p>
+                © LOGO, 2019. All rights reserved. Created by Laaqiq.
+            </p>
         </div>
     </footer>
     <!-- END FOOTER -->

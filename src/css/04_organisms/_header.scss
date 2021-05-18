@@ -3,6 +3,10 @@ header {
         line-height: 60px;
     }
 
+    #title2 {
+        display: none;
+    }
+
     p {
         color: $text-white;
         padding-top: 0;
@@ -30,6 +34,64 @@ header {
             font-weight: 600;
             border-width: 3px;
             border-radius: 5px;
+        }
+    }
+}
+
+// Media query to define what menu looks like on Desktop
+@media screen and (min-width: 769px) {
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        min-height: 670px;
+
+        #title1 {
+            display: none;
+        }
+
+        #title2 {
+            display: block;
+        }
+
+        .leftContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 75px;
+            margin-left: 20px;
+
+            p {
+                display: block;
+            }
+
+            h1 {
+                display: block;
+                font-size: 70px;
+                line-height: 80px;
+            }
+
+            form {
+                display: inline;
+
+                #emailInput {
+                    display: inline;
+                    width: 300px;
+                    float: left;
+                }
+
+                #submitButton {
+                    display: inline;
+                    width: 175px;
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .rightContent {
+            display: inline;
+            width: 40%;
+            margin-left: 125px;
+            margin-top: 20px;
         }
     }
 }
