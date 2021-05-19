@@ -4,6 +4,8 @@ nav {
     }
 }
 
+
+
 #section1 {
     .section1__button {
         text-decoration: none;
@@ -15,7 +17,14 @@ nav {
         border-width: 3px;
         border-radius: 5px;
     }
+
+    .section1__button:hover {
+        background-color: $text-black;
+        transition: 0.5s;
+    }
 }
+
+
 
 #section2 {
     .section2__button {
@@ -25,7 +34,14 @@ nav {
         padding: 10px 25px;
         border-radius: 5px;
     }
+
+    .section2__button:hover {
+        background-color: $text-black;
+        transition: 0.5s;
+    }
 }
+
+
 
 #section3 {
     .section3__button {
@@ -37,7 +53,15 @@ nav {
         border-radius: 5px;
         border: 1px solid $red;
     }
+
+    .section3__button:hover {
+        background-color: $red;
+        color: $yellow;
+        transition: 0.5s;
+    }
 }
+
+
 
 footer {
     .footer__top {
@@ -49,10 +73,20 @@ footer {
             border-radius: 5px;
             border: 1px solid $text-black;
         }
+
+        .footer__top__button:hover {
+            background-color: $text-black;
+            color: white;
+            transition: 0.5s;
+        }
     }
 }
 
-// Media query to define what menu looks like on Desktop
+
+
+
+
+// DESKTOP
 @media screen and (min-width: 769px) {
     nav {
         .nav__button {
@@ -63,7 +97,15 @@ footer {
             padding: 10px 40px;
             border-radius: 5px;
         }
+
+        .nav__button:hover {
+            background-color: #fff;
+            color: $pink;
+            transition: 0.5s;
+        }
     }
+
+
 
     #section1 {
         .section1__rightcontent {
@@ -71,5 +113,11 @@ footer {
                 width: 140px;
             }
         }
+    }
+
+
+
+    #section3 {
+        padding-bottom: 60px;
     }
 }

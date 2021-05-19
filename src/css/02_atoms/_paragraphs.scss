@@ -2,9 +2,11 @@ p {
     display: block;
 }
 
+
+
 header {
     .header__p {
-        color: $text-white;
+        color: #fff;
         padding-top: 0;
         padding-bottom: 0;
         letter-spacing: 1px;
@@ -49,12 +51,15 @@ header {
 }
 
 
+
 #section3 {
     .section3__p1 {
         color: $red;
         padding-top: 65px;
     }
 }
+
+
 
 footer {
     .footer__top {
@@ -71,7 +76,11 @@ footer {
     }
 }
 
-// Media query to define what menu looks like on Desktop
+
+
+
+
+// DESKTOP
 @media screen and (min-width: 769px) {
     #section1 {
         .section1__rightcontent {
@@ -81,6 +90,8 @@ footer {
         }
     }
 
+
+
     #section2 {
         .section2__p2 {
             width: 480px;
@@ -88,7 +99,9 @@ footer {
 
         .section2__item {
             .section2__item__p {
-                width: 350px;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
     }

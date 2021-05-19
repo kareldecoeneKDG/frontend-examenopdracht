@@ -14,15 +14,27 @@ header {
             margin-left: $margin-left;
             margin-top: $margin-right;
             color: $text-black;
-            background-color: $text-white;
+            background-color: #fff;
             padding: 10px 45px 10px 45px;
             font-weight: 600;
             border-width: 3px;
             border-radius: 5px;
         }
+
+        .header__inputsubmit:hover {
+            background-color: $text-black;
+            color: white;
+            transition: 0.5s;
+            cursor: pointer;
+        }
     }
 }
 
+
+
+
+
+// DESKTOP
 @media screen and (min-width: 769px) {
     header {
         .header__form {
@@ -30,13 +42,15 @@ header {
         
             .header__inputemail {
                 display: inline;
-                width: 300px;
+                /* width: 300px; */
+                width: 50%;
                 float: left;
             }
         
             .header__inputsubmit {
                 display: inline;
-                width: 175px;
+                /* width: 175px; */
+                width: 35%;
                 margin-top: 0;
             }
         }

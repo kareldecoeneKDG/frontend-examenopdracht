@@ -3,7 +3,7 @@ footer {
         text-align: center;
         background-image: url("../img/footer2IMG.png");
         padding-bottom: 80px;
-        max-height: 448px;
+        /* max-height: 448px; */
         background-size: cover;
         background-position: center bottom;
         background-position: 50% 55%;
@@ -23,11 +23,15 @@ footer {
     }
 }
 
-// Media query to define what menu looks like on Desktop
+
+
+
+
+// DESKTOP
 @media screen and (min-width: 769px) {
     footer {
         .footer__top {
-            height: 380px;
+            padding-bottom: 10%;
         }
 
         .footer__bottom {

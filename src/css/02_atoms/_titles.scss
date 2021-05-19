@@ -3,13 +3,21 @@ h1, h2, h3, h4 {
 }
 
 h2 {
-    color: $text-white;
+    color: #fff;
     font-size: 40px;
 }
+
+
 
 header {
     .header__title {
         line-height: 60px;
+    }
+
+    .header__title:hover {
+        padding-bottom: 25px;
+        transition: 1s;
+        cursor: pointer;
     }
 
     .header__title2 {
@@ -25,11 +33,15 @@ header {
     }
 }
 
+
+
 #section2 {
     .section2__title {
         color: $text-black;
     }
 }
+
+
 
 #section3 {
     .section3__title {
@@ -37,6 +49,8 @@ header {
         margin-bottom: 40px;
     }
 }
+
+
 
 footer {
     .footer__top {
@@ -51,7 +65,11 @@ footer {
     }
 }
 
-// Media query to define what menu looks like on Desktop
+
+
+
+
+// DESKTOP
 @media screen and (min-width: 769px) {
     header {
         .header__leftcontent {
@@ -69,6 +87,8 @@ footer {
             }
         }
     }
+
+
 
     footer {
         .footer__top {

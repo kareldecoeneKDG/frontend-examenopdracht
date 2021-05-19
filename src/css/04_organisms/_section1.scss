@@ -2,12 +2,16 @@
     padding-bottom: 50px;
 }
 
-// Media query to define what menu looks like on Desktop
+
+
+
+
+// DESKTOP
 @media screen and (min-width: 769px) {
     #section1 {
         display: flex;
         justify-content: space-evenly;
-        min-height: 650px;
+        /* min-height: 650px; */
 
         .section1__leftcontent {
             display: inline;

@@ -30,7 +30,11 @@
     }
 }
 
-// Media query to define what menu looks like on Desktop
+
+
+
+
+// DESKTOP
 @media screen and (min-width: 769px) {
     #section2 {
         .section2__items {
@@ -39,7 +43,8 @@
             justify-content: space-evenly;
 
             .section2__item {
-                width: 350px;
+                /* width: 350px; */
+                width: 30%;
             }
         }
     }
