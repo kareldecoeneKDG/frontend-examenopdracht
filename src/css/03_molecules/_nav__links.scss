@@ -25,7 +25,15 @@ nav {
     }
 
     .nav__links--active {
+        margin-top: 20px;
         transform: translateX(0%);
+        background-color: $text-black;
+        color:white;
+
+        li:hover {
+            background-color: #444;
+            transition: 0.5s;
+        }
     }
 }
 
